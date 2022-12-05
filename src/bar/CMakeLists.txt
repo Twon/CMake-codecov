@@ -18,7 +18,7 @@ add_executable(bar bar.c)
 
 target_link_libraries(bar foo)
 if ("${CMAKE_VERSION}" VERSION_GREATER "3.0.2")
-	target_link_libraries(bar header)
+	target_link_libraries(bar header gen)
 endif()
 
 
